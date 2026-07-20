@@ -1,0 +1,23 @@
+CREATE TABLE Sales (
+    RowID INT,
+    OrderID VARCHAR(30),
+    OrderDate DATE,
+    ShipDate DATE,
+    ShipMode VARCHAR(50),
+    CustomerID VARCHAR(30),
+    CustomerName VARCHAR(100),
+    Segment VARCHAR(50),
+    Country VARCHAR(100),
+    City VARCHAR(100),
+    State VARCHAR(100),
+    PostalCode INT,
+    Region VARCHAR(50),
+    ProductID VARCHAR(30),
+    Category VARCHAR(50),
+    SubCategory VARCHAR(50),
+    ProductName VARCHAR(255),
+    Sales DECIMAL(10,2),
+    Quantity INT,
+    Discount DECIMAL(5,2),
+    Profit DECIMAL(10,2)
+);
