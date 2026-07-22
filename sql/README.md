@@ -1,11 +1,20 @@
-## Dataset
+# SQL Layer
 
-This project uses the Kaggle Sales Forecasting dataset.
+This folder contains all SQL artifacts for the Retail Data Platform project.
 
-Columns include:
+## Files
 
-- Order Details
-- Customer Details
-- Product Details
-- Geographic Information
-- Sales
+- create_tables.sql
+- data_quality_checks.sql
+- business_queries.sql
+- views.sql
+- stored_procedures.sql
+- indexes.sql
+
+## Features
+
+- Data Profiling
+- Business Analytics Queries
+- Views
+- Stored Procedures
+- Performance Optimization
