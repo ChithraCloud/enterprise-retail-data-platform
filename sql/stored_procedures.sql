@@ -1,6 +1,6 @@
-CREATE PROCEDURE GetSalesByRegion
+CREATE PROCEDURE usp_GetSalesByRegion
 (
-    @Region VARCHAR(50)
+    @Region NVARCHAR(50)
 )
 AS
 BEGIN
@@ -11,4 +11,4 @@ FROM Sales
 
 WHERE Region=@Region;
 
-END
+END;
