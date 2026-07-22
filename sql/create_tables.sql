@@ -1,23 +1,32 @@
-CREATE TABLE Sales (
-    RowID INT PRIMARY KEY,
-    OrderID VARCHAR(30) NOT NULL,
-    OrderDate DATE NOT NULL,
-    ShipDate DATE,
-    ShipMode VARCHAR(50),
-    CustomerID VARCHAR(30) NOT NULL,
-    CustomerName VARCHAR(100),
-    Segment VARCHAR(50),
-    Country VARCHAR(100),
-    City VARCHAR(100),
-    State VARCHAR(100),
-    PostalCode VARCHAR(20),
-    Region VARCHAR(50),
-    ProductID VARCHAR(30),
-    Category VARCHAR(50),
-    SubCategory VARCHAR(50),
-    ProductName VARCHAR(255),
-    Sales DECIMAL(12,2),
-    Quantity INT,
-    Discount DECIMAL(5,2),
-    Profit DECIMAL(12,2)
-);
+USE [RetailDataPlatform]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[sales](
+	[Row_ID] [smallint] NOT NULL,
+	[Order_ID] [nvarchar](50) NOT NULL,
+	[Order_Date] [date] NOT NULL,
+	[Ship_Date] [date] NOT NULL,
+	[Ship_Mode] [nvarchar](50) NOT NULL,
+	[Customer_ID] [nvarchar](50) NOT NULL,
+	[Customer_Name] [nvarchar](50) NOT NULL,
+	[Segment] [nvarchar](50) NOT NULL,
+	[Country] [nvarchar](50) NOT NULL,
+	[City] [nvarchar](50) NOT NULL,
+	[State] [nvarchar](50) NOT NULL,
+	[Postal_Code] [int] NULL,
+	[Region] [nvarchar](50) NOT NULL,
+	[Product_ID] [nvarchar](50) NOT NULL,
+	[Category] [nvarchar](50) NOT NULL,
+	[Sub_Category] [nvarchar](50) NOT NULL,
+	[Product_Name] [nvarchar](150) NOT NULL,
+	[Sales] [float] NOT NULL
+) ON [PRIMARY]
+GO
+
+
