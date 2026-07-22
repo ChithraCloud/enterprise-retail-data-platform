@@ -1,13 +1,15 @@
-CREATE VIEW vw_TotalSales AS
+CREATE VIEW vw_SalesSummary AS
 
 SELECT
 
 Region,
 
-SUM(Sales) TotalSales,
+Category,
 
-SUM(Profit) Profit
+SUM(Sales) AS TotalSales,
+
+COUNT(Order_ID) AS TotalOrders
 
 FROM Sales
 
-GROUP BY Region;
+GROUP BY Region, Category;
